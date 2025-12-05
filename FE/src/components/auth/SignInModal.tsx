@@ -135,7 +135,7 @@ export default function SignInModal() {
 
                     {/* Privacy Policy Footer */}
                     <p className="text-center text-xs text-gray-500 mt-6">
-                        By signing up, you agree to Hotel Booking's{' '}
+                        By signing up, you agree to Hotel Booking&apos;s{' '}
                         <a href="/privacy" className="text-primary-500 hover:text-primary-600 underline">
                             Privacy Policy
                         </a>
