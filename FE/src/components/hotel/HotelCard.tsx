@@ -13,12 +13,12 @@ export default function HotelCard({ hotel, onClick }: HotelCardProps) {
         <Card hover onClick={onClick} className="group">
             {/* Hotel Image */}
             <div className="relative h-48 md:h-56 overflow-hidden">
-                <Image
-                    src={hotel.images[0]}
+                <img
+                    src={hotel.images[0]} // Sử dụng URL ảnh gốc
                     alt={hotel.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    // Các class này thay thế cho 'fill': 
+                    // Đặt ảnh chiếm 100% width/height của thẻ cha, và position absolute
+                    className="object-cover absolute inset-0 w-full h-full group-hover:scale-110 transition-transform duration-300"
                 />
 
                 {/* Rating Badge */}
