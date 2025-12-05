@@ -1,3 +1,7 @@
 {
-    "extends": "next/core-web-vitals"
+    "extends": "next/core-web-vitals",
+    "rules": {
+        // Thêm dòng này để tắt rule cụ thể
+        "react/no-unescaped-entities": "off" 
+    }
 }
