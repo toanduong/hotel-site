@@ -59,13 +59,11 @@ export default function HeroSlider() {
                     className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
-                    <Image
-                        src={image.url}
+                    <img
+                        src={image.url} // Dùng URL ảnh gốc
                         alt={image.title}
-                        fill
-                        className="object-cover"
-                        priority={index === 0}
-                        sizes="100vw"
+                        // Thêm CSS để mô phỏng thuộc tính fill và object-cover
+                        className="object-cover absolute inset-0 w-full h-full"
                     />
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/40" />
