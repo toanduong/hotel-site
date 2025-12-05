@@ -134,7 +134,7 @@ export default function SearchBar() {
                                 value={location || 'City, hotel name...'}
                                 onClick={() => setShowLocationPopup(!showLocationPopup)}
                                 placeholder="City, hotel name..."
-                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all cursor-pointer bg-white"
+                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all cursor-pointer bg-white text-primary-500"
                             />
                         </div>
                         {/* Location Popup - Fixed positioning with search box width */}
@@ -274,7 +274,7 @@ export default function SearchBar() {
                                 value={checkIn}
                                 onChange={(e) => setCheckIn(e.target.value)}
                                 min={today}
-                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-primary-500"
                             />
                         </div>
                     </div>
@@ -295,7 +295,7 @@ export default function SearchBar() {
                                 value={checkOut}
                                 onChange={(e) => setCheckOut(e.target.value)}
                                 min={checkIn || today}
-                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-primary-500"
                             />
                         </div>
                     </div>
@@ -316,7 +316,7 @@ export default function SearchBar() {
                                 readOnly
                                 value={`${adults + children + babies} Guest${adults + children + babies !== 1 ? 's' : ''}`}
                                 onClick={() => setShowGuestsPopup(!showGuestsPopup)}
-                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all cursor-pointer bg-white"
+                                className="w-full pl-10 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all cursor-pointer bg-white text-primary-500"
                             />
                         </div>
 
